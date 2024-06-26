@@ -1,4 +1,6 @@
 import HomePage from './routes/homepage/HomePage.jsx'
+import SinglePage from './routes/singlePage/SinglePage.jsx'
+import Login from './routes/login/Login.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,7 +24,15 @@ function App() {
         {
           path:"/list",
           element: <ListPage/>
-        }
+        },
+        {
+          path:"/:id",
+          element: <SinglePage/>
+        },
+        {
+          path:"/login",
+          element: <Login/>
+        },
       ]
     }
   ])
