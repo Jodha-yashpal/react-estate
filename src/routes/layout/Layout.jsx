@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
+import './layout.scss'
 
 function layout() {
   return (
-    <div className='layout'>
          <div className="layout">
             <div className="navbar">
               <Navbar/>
@@ -13,7 +13,6 @@ function layout() {
               <Outlet/>
            </div>
          </div>
-    </div>
   )
 }
 
